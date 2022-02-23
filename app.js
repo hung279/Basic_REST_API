@@ -20,8 +20,8 @@ app.use(bodyParser.json({ limit: "50mb" }));
 app.use(cors());
 app.use(morgan("common"));
 
-app.use("/v1/author", authorRoute);
-app.use("/v1/book", bookRoute);
+app.use("/api/author", authorRoute);
+app.use("/api/book", bookRoute);
 
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
